@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header {
+    background-color: rgb(8, 30, 55);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.name-header {
+    color: rgb(255, 255, 255);
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    margin-left: 70px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+
+ .resume-button {
+    position: relative; 
+    overflow: hidden;
+    margin-right: 30px;
+    color:  rgb(255, 255, 255);
+    background-color: rgb(132, 59, 79);
+    padding: 8px 13px;
+    border-radius: 16px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.projects-button, .contact-button, .home-button {
+    position: relative; 
+    margin-right: 30px;
+    color: rgb(120, 49, 68);
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.projects-button::after, .contact-button::after, .home-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(120, 49, 68), rgb(255, 255, 255));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(160, 148, 57), rgb(243, 236, 163));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-in-out;
+    z-index: -1;
+}
+
+.projects-button:hover::after, .contact-button:hover::after, .home-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.resume-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section {
+    background-image: url('Colored Patterns.svg');
+    background-size: cover; /* Adjusts the image to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    height: 93vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.name-home-section {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-home-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: italic;
+}
+
+.about-me-button {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 5%;
+    padding: 8px 13px;
+    border-radius: 16px;
+    border: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(160, 148, 57);
+    transition: background-color 0.15s ease-in-out, color 1.5s ease-in-out;
+}
+
+.about-me-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(120, 49, 68), rgb(242, 181, 196));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-in-out;
+    z-index: -1;
+}
+
+.about-me-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.projects-section {
+    background-color: rgb(176, 196, 222);
+    height: 100vh;
+}
+
+.project-title {
+    font-size: 30px;
+    color: rgb(67, 66, 66);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socials-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.linkedin-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 2px black;
+    transition: box-shadow, background-color 0.3s ease-in-out;
+}
+
+.github-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 2px black;
+    transition: box-shadow, background-color 0.3s ease-in-out;
+}
+
+.linkedin-icon:hover {
+    box-shadow: inset 0 0 0 2px black, 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 25px;
+    border-color: black;
+    background-color: rgb(24, 81, 147);
+}
+
+.github-icon:hover {
+    box-shadow: inset 0 0 0 2px black, 0 4px 8px rgba(0, 0, 0, 0.2);  
+    border-radius: 25px;
+    background-color: rgb(24, 81, 147);
+}
