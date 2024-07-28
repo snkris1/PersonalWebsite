@@ -1,8 +1,8 @@
 .contact-section {
     background-color: rgb(230, 244, 255);
     height: 100vh;
-    padding: 20px; /* Add some padding */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 .contact-title {
@@ -15,10 +15,10 @@
 
 .contact-content {
     display: flex;
-    justify-content: space-between; /* Space between the text and form */
-    align-items: center; /* Center vertically */
-    padding: 20px; /* Add some padding */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 .contact-text {
@@ -27,16 +27,15 @@
 }
 
 .contact-form {
-    flex: 1; /* Allow the form container to grow */
-    max-width: 50%; /* Limit the maximum width */
-    background-color: rgb(182, 219, 242); /* Light background color */
+    flex: 1; 
+    max-width: 50%; 
+    background-color: rgb(182, 219, 242); 
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box; 
 }
 
-/* Contact Title */
 .contact-subtitle {
 	font-size: 2em;
 	font-weight: bold;
@@ -50,20 +49,17 @@
     margin-bottom: 20px;
 }
 
-/* Contact Form */
 .contact-fields form {
 	display: flex;
 	flex-direction: column;
 }
 
-/* Form Labels */
 .contact-fields label {
 	font-size: 1em;
 	color: #555;
 	margin-bottom: 5px;
 }
 
-/* Form Inputs */
 .contact-fields input[type="text"],
 .contact-fields input[type="email"],
 .contact-fields textarea {
@@ -80,19 +76,17 @@
 .contact-fields input[type="text"]:focus,
 .contact-fields input[type="email"]:focus,
 .contact-fields textarea:focus {
-	border-color: #007BFF; /* Primary color for focus */
+	border-color: #007BFF; 
 	outline: none;
 }
 
-/* Textarea */
 .contact-fields textarea {
 	resize: vertical;
 	min-height: 150px;
 }
 
-/* Submit Button */
 .contact-fields input[type="submit"] {
-	background-color: #007BFF; /* Primary button color */
+	background-color: #007BFF; 
 	color: #fff;
 	font-size: 1em;
 	padding: 10px 20px;
@@ -103,5 +97,5 @@
 }
 
 .contact-fields input[type="submit"]:hover {
-	background-color: #0056b3; /* Darker shade on hover */
+	background-color: #0056b3;
 }

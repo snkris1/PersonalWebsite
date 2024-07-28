@@ -5,9 +5,9 @@
 
 .home-section {
     background-image: url('../background_imgs/Colored Patterns.svg');
-    background-size: cover; /* Adjusts the image to cover the entire viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     height: 93vh;
     margin-top: 7vh;
     display: flex;

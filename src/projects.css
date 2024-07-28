@@ -54,9 +54,9 @@
 
 .project1-tile, .project3-tile {
     background-image: url('../project_imgs/World\ Map.svg');
-    background-size: cover; /* Adjusts the image to cover the entire viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     justify-content: center;
     align-items: center;
 }
@@ -151,5 +151,5 @@
 
 .project2-tile:hover .project2-title, .project2-tile:hover .project2-description, 
 .project2-tile:hover .project2-button {
-    transform: scale(1.1); /* Slightly increase the size */
+    transform: scale(1.1); 
 }

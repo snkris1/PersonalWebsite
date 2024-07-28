@@ -1,8 +1,8 @@
 .footer {
-    background-color: rgb(8, 30, 55); /* Dark background color */
-    color: rgb(152, 61, 87); /* White text color */
-    padding: 20px 0; /* Vertical padding */
-    text-align: center; /* Center text */
+    background-color: rgb(8, 30, 55); 
+    color: rgb(152, 61, 87); 
+    padding: 20px 0; 
+    text-align: center; 
     position: relative;
     bottom: 0;
     width: 100%;
@@ -11,13 +11,13 @@
 .footer-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space between left and right sections */
-    gap: 20px; /* Space between sections */
-    align-items: center; /* Center items vertically */
-    max-width: 1200px; /* Limit the maximum width */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 50px 20px; /* Horizontal padding */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    justify-content: space-between; 
+    gap: 20px; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 50px 20px; 
+    box-sizing: border-box; 
 }
 
 .footer-initial {
