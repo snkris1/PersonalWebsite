@@ -1,0 +1,121 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section {
+    background-image: url('../background_imgs/Colored Patterns.svg');
+    background-size: cover; /* Adjusts the image to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    height: 93vh;
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.name-home-section {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.description-home-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: italic;
+}
+
+.download-resume-button {
+    position: relative;
+    overflow: hidden;
+    padding: 13px 18px;
+    border-radius: 16px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(120, 49, 68);
+    transition: background-color 0.15s ease-in-out, color 1.5s ease-in-out;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+.download-resume-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(120, 49, 68), rgb(242, 181, 196));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-in-out;
+    z-index: -1;
+}
+
+.download-resume-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.download-icon { 
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.linkedin-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 2px black;
+    background-color: rgb(120, 49, 68);
+    transition: box-shadow, background-color 0.3s ease-in-out;
+}
+
+.github-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 2px black;
+    background-color: rgb(120, 49, 68);
+    transition: box-shadow, background-color 0.3s ease-in-out;
+}
+
+.linkedin-icon:hover {
+    box-shadow: inset 0 0 0 2px black, 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 25px;
+    border-color: black;
+    background-color: rgb(230, 52, 67);
+}
+
+.github-icon:hover {
+    box-shadow: inset 0 0 0 2px black, 0 4px 8px rgba(0, 0, 0, 0.2);  
+    border-radius: 25px;
+    background-color: rgb(230, 52, 67);
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    gap: 20px;
+}

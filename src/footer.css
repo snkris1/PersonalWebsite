@@ -1,0 +1,69 @@
+.footer {
+    background-color: rgb(8, 30, 55); /* Dark background color */
+    color: rgb(152, 61, 87); /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between left and right sections */
+    gap: 20px; /* Space between sections */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 50px 20px; /* Horizontal padding */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.footer-initial {
+    color: rgb(255, 255, 255);
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer-initial:hover {
+    color: rgb(152, 61, 87);
+    transform: scale(1.1);
+}
+
+.footer-links {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links {
+    position: relative; 
+    color: rgb(152, 61, 87);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-links::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(120, 49, 68), rgb(255, 255, 255));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

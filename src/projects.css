@@ -1,0 +1,155 @@
+.projects-section {
+    background-color: rgb(230, 244, 255);
+    height: 100vh;
+}
+
+.project-title {
+    font-size: 50px;
+    color: rgb(15, 42, 71);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.project2-title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out 0.2s;
+}
+
+.project1-title, .project3-title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.project-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project1-tile, .project2-tile, .project3-tile {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.project1-tile, .project3-tile {
+    background-image: url('../project_imgs/World\ Map.svg');
+    background-size: cover; /* Adjusts the image to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    justify-content: center;
+    align-items: center;
+}
+
+.project2-tile {
+    background-image: url("../project_imgs/ParticleSimImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.project1-tile:hover, .project3-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project2-tile::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(0,0,0, 0.9), rgb(15, 42, 71, 0.9));
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    z-index: -1;
+}
+
+.project2-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project2-tile:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.project2-button { 
+    position: relative;
+    overflow: hidden;
+    padding: 13px 18px;
+    width: 50%;
+    border-radius: 16px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(120, 49, 68);
+    transition: background-color 0.15s ease-in-out, color 1.5s ease-in-out;
+    transition: transform 0.2s ease-in-out 0.2s;
+    z-index: 1;
+}
+
+.project2-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(120, 49, 68), rgb(242, 181, 196));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-in-out;
+    z-index: -1;
+}
+
+.project2-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.project2-description {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out 0.2s;
+}
+
+.project2-tile:hover .project2-title, .project2-tile:hover .project2-description, 
+.project2-tile:hover .project2-button {
+    transform: scale(1.1); /* Slightly increase the size */
+}
